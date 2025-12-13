@@ -1,0 +1,193 @@
+@import '/css/plugins.css';
+@import '/css/colors.css';
+@import '/css/darkMode.css';
+@import '/css/style.css';
+@import './components/BrandColors.css';
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Simplified Portfolio Styles */
+.simple-portfolio {
+  background: var(--wish-cream);
+  overflow-x: hidden;
+}
+
+/* Smooth section transitions */
+.grax_tm_section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.grax_tm_section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero section should be visible immediately */
+.simple-hero {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.simple-hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.scroll-to-form-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  animation: fadeInUp 1.2s ease 2s both;
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(4, 29, 38, 0.2);
+}
+
+.scroll-to-form-button:active {
+  transform: translateY(-1px);
+}
+
+.scroll-to-form-button .arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.scroll-to-form-button:hover .arrow-icon {
+  transform: translateY(3px);
+}
+
+.simple-hero .scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.simple-hero .scroll-line {
+  width: 2px;
+  height: 40px;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.simple-about {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.simple-about .about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.simple-about .grax_tm_title_holder h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.simple-about .grax_tm_title_holder span {
+  color: #32A6A6;
+}
+
+.simple-about .text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Mulish", sans-serif;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .simple-hero .hero-title {
+    font-size: 42px;
+  }
+  
+  .simple-hero .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .scroll-to-form-button {
+    padding: 14px 28px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .scroll-to-form-button .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .simple-about .grax_tm_title_holder h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-form-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .simple-hero .hero-title {
+    font-size: 36px;
+  }
+
+  .simple-hero .hero-subtitle {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,330 @@
+/* Wish Fishing Club Brand Colors */
+:root {
+  --wish-dark-blue: #041D26;
+  --wish-deep-teal: #06353f;
+  --wish-medium-teal: #0A6873;
+  --wish-vibrant-teal: #32A6A6;
+  --wish-pale-blue: #A7D9D9;
+  --wish-white: #ffffff;
+  --wish-cream: #faf9f6;
+}
+
+/* Apply brand colors throughout */
+.simple-portfolio {
+  background: var(--wish-cream);
+}
+
+/* Glass Morphism Base Styles */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section with Brand Colors - Full Screen Video */
+.simple-hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.simple-hero .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #041D26;
+}
+
+.hero-background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+  background: #041D26;
+}
+
+.hero-background-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.simple-hero .bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 29, 38, 0.2);
+  z-index: 1;
+}
+
+/* Ensure Hero is visible and properly positioned */
+.simple-hero {
+  position: relative !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+}
+
+.simple-hero .content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple-hero .details {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.simple-hero .details.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-form-button {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(4, 29, 38, 0.2) !important;
+}
+
+.scroll-to-form-button:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 12px 40px rgba(4, 29, 38, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .simple-hero .details {
+    padding: 0 20px;
+  }
+}
+
+.simple-hero .scroll-line {
+  background: var(--wish-vibrant-teal);
+}
+
+/* Scroll Button with Glass Effect */
+.scroll-to-form-button {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 8px 32px rgba(4, 29, 38, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.scroll-to-form-button:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 12px 40px rgba(4, 29, 38, 0.3) !important;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+
+/* About Section - Glass Effect */
+.simple-about {
+  background: linear-gradient(180deg, var(--wish-cream) 0%, var(--wish-white) 100%);
+  padding: 100px 0;
+}
+
+.simple-about .about-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 60px 40px;
+  box-shadow: 0 8px 32px rgba(4, 29, 38, 0.1);
+}
+
+.simple-about .grax_tm_title_holder h2 {
+  color: var(--wish-dark-blue);
+  font-family: 'Playfair Display', serif;
+}
+
+.simple-about .grax_tm_title_holder span {
+  color: var(--wish-vibrant-teal);
+}
+
+.simple-about .text p {
+  color: var(--wish-deep-teal);
+}
+
+/* Topbar with Brand Colors - Glass Effect */
+.grax_tm_topbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(4, 29, 38, 0.1);
+}
+
+.grax_tm_topbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.grax_tm_topbar .logo a {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+}
+
+.grax_tm_topbar .logo a {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  min-height: 50px;
+}
+
+.grax_tm_topbar .logo img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+/* Both logos in same position, switching via opacity */
+.grax_tm_topbar .logo .logo-dark {
+  opacity: 1;
+  position: relative;
+}
+
+.grax_tm_topbar .logo .logo-light {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Show light logo when topbar is over dark sections */
+.grax_tm_topbar.over-dark .logo .logo-dark {
+  opacity: 0;
+}
+
+.grax_tm_topbar.over-dark .logo .logo-light {
+  opacity: 1;
+  position: relative;
+}
+
+.grax_tm_topbar .menu ul li a {
+  color: var(--wish-dark-blue);
+}
+
+.grax_tm_topbar .menu ul li.current a,
+.grax_tm_topbar .menu ul li a:hover {
+  color: var(--wish-vibrant-teal);
+}
+
+/* Contact Form with Brand Colors */
+.contact-form-section {
+  background: linear-gradient(135deg, var(--wish-pale-blue) 0%, var(--wish-vibrant-teal) 100%);
+}
+
+.contact-form-wrapper {
+  background: var(--wish-white);
+  box-shadow: 0 10px 40px rgba(4, 29, 38, 0.15);
+}
+
+.contact-form-header h2 {
+  color: var(--wish-dark-blue);
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-form-header p {
+  color: var(--wish-deep-teal);
+}
+
+.form-group label {
+  color: var(--wish-dark-blue);
+}
+
+.form-group input,
+.form-group textarea {
+  border-color: var(--wish-pale-blue);
+  color: var(--wish-dark-blue);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--wish-vibrant-teal);
+  box-shadow: 0 0 0 3px rgba(50, 166, 166, 0.1);
+}
+
+.submit-button {
+  background: linear-gradient(135deg, var(--wish-medium-teal) 0%, var(--wish-vibrant-teal) 100%);
+  color: var(--wish-white);
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--wish-vibrant-teal) 0%, var(--wish-pale-blue) 100%);
+  box-shadow: 0 8px 20px rgba(50, 166, 166, 0.3);
+  color: var(--wish-dark-blue);
+}
+
+.form-message.success {
+  background-color: rgba(167, 217, 217, 0.2);
+  color: var(--wish-deep-teal);
+  border: 1px solid var(--wish-pale-blue);
+}
+
+.form-message.error {
+  background-color: rgba(10, 104, 115, 0.1);
+  color: var(--wish-deep-teal);
+  border: 1px solid var(--wish-medium-teal);
+}
+
+/* Progress Bar */
+.progress_inner .background .bar_in {
+  background: linear-gradient(90deg, var(--wish-vibrant-teal) 0%, var(--wish-pale-blue) 100%);
+}
+
+/* Copyright Section */
+.grax_tm_copyright {
+  background: var(--wish-dark-blue);
+  color: var(--wish-pale-blue);
+}
+
+.grax_tm_copyright a {
+  color: var(--wish-vibrant-teal);
+}
+
+.grax_tm_copyright a:hover {
+  color: var(--wish-pale-blue);
+}
+
