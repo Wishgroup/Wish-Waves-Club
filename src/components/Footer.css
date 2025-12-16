@@ -1,7 +1,9 @@
 /* Footer Styles */
 .mil-dark-bg {
-  background-color: var(--wish-dark-blue);
+  background: linear-gradient(to bottom, rgb(10, 104, 115) 0%, var(--wish-dark-blue) 100%);
   color: var(--wish-white);
+  position: relative;
+  z-index: 1;
 }
 
 .mil-p-120-60 {
@@ -142,6 +144,113 @@
   .col-lg-6,
   .col-12 {
     padding: 0 10px;
+  }
+}
+
+/* App Promotion Section Mobile Styles */
+.app-promotion-section {
+  position: relative;
+}
+
+.app-promotion-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 968px) {
+  .app-promotion-section {
+    padding: 30px 0 !important;
+  }
+
+  .app-promotion-section .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app-promotion-section .col-md-3,
+  .app-promotion-section .col-md-6,
+  .app-promotion-section .col-lg-3,
+  .app-promotion-section .col-lg-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-promotion-section .col-md-3:last-child {
+    margin-bottom: 0;
+  }
+
+  .app-promotion-section img {
+    max-height: 120px !important;
+    margin: 0 auto;
+  }
+
+  .app-promotion-section h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .app-promotion-section p {
+    font-size: 14px !important;
+    padding: 0 15px;
+    line-height: 1.6 !important;
+  }
+
+  .app-promotion-section p br {
+    display: none;
+  }
+
+  .app-promotion-section .col-md-3[style*="justify-content: flex-end"] {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-promotion-section {
+    padding: 25px 0 !important;
+  }
+
+  .app-promotion-section img {
+    max-height: 100px !important;
+  }
+
+  .app-promotion-section h3 {
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .app-promotion-section p {
+    font-size: 13px !important;
+    padding: 0 10px;
+  }
+
+  .app-promotion-section .col-md-3,
+  .app-promotion-section .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-promotion-section {
+    padding: 20px 0 !important;
+  }
+
+  .app-promotion-section img {
+    max-height: 80px !important;
+  }
+
+  .app-promotion-section h3 {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .app-promotion-section p {
+    font-size: 12px !important;
+    padding: 0 5px;
   }
 }
 

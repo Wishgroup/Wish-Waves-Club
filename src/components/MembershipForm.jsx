@@ -217,15 +217,26 @@ function MembershipForm() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="idFiles">Upload ID (Front & Back) *</label>
-                  <input
-                    type="file"
-                    id="idFiles"
-                    name="idFiles"
-                    onChange={handleChange}
-                    required
-                    accept="image/*,.pdf"
-                    multiple
-                  />
+                  <div className="file-upload-wrapper">
+                    <input
+                      type="file"
+                      id="idFiles"
+                      name="idFiles"
+                      onChange={handleChange}
+                      required
+                      accept="image/*,.pdf"
+                      multiple
+                      className="file-input-hidden"
+                    />
+                    <label htmlFor="idFiles" className="file-upload-button">
+                      Choose File
+                    </label>
+                    <span className="file-name-display">
+                      {formData.idFiles && formData.idFiles.length > 0
+                        ? `${formData.idFiles.length} file(s) selected`
+                        : 'No file chosen'}
+                    </span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -548,14 +559,25 @@ function MembershipForm() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="paymentReceipt">Upload Payment Receipt *</label>
-                  <input
-                    type="file"
-                    id="paymentReceipt"
-                    name="paymentReceipt"
-                    onChange={handleChange}
-                    required
-                    accept="image/*,.pdf"
-                  />
+                  <div className="file-upload-wrapper">
+                    <input
+                      type="file"
+                      id="paymentReceipt"
+                      name="paymentReceipt"
+                      onChange={handleChange}
+                      required
+                      accept="image/*,.pdf"
+                      className="file-input-hidden"
+                    />
+                    <label htmlFor="paymentReceipt" className="file-upload-button">
+                      Choose File
+                    </label>
+                    <span className="file-name-display">
+                      {formData.paymentReceipt && formData.paymentReceipt.length > 0
+                        ? formData.paymentReceipt[0].name
+                        : 'No file chosen'}
+                    </span>
+                  </div>
                 </div>
               </div>
             </section>

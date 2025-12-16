@@ -31,14 +31,19 @@ html {
 	margin: 0px
 }
 body{
-	font-family: "Mulish", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 1px;
 	word-wrap: break-word;
 	font-weight: 400;
-	background-color: #faf9f6;
+	background-color: #123f49;
 	color: #06353f;
+	overflow-x: hidden;
+	width: 100%;
+	position: relative;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 svg{
 	fill: currentcolor;
@@ -84,12 +89,21 @@ img.svg{
 	padding:0px 40px;
 	position:relative;
 	clear:both;
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0px 20px;
+		width: 100%;
+		box-sizing: border-box;
+	}
 }
 
 h1, h2, h3, h4, h5, h6{
 	font-weight:500;
 	line-height: 1.4;
-	font-family: "Playfair Display", serif;
+	font-family: "Montserrat", sans-serif;
 	color: #041D26;
 }
 
@@ -288,7 +302,7 @@ h6 { font-size: 16px; }
 .grax_tm_topbar .menu ul li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	transition: all .3s ease;
 }
@@ -451,7 +465,7 @@ h6 { font-size: 16px; }
 	color: #000;
 	display: inline-block;
 	padding: 4px 0px;
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 }
 .grax_tm_mobile_menu .logo img{max-width: 70px;}
@@ -570,7 +584,7 @@ h6 { font-size: 16px; }
 .grax_tm_hero .job{
 	color: #ddd;
 	letter-spacing: 1.5px;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-size: 17px;
 	font-weight: 500;
 	margin-bottom: 40px;
@@ -723,7 +737,7 @@ h6 { font-size: 16px; }
 	padding-left: 30px;
 }
 .grax_tm_about .right .list ul li span{
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	color: #000;
 	font-style: italic;
@@ -804,7 +818,7 @@ h6 { font-size: 16px; }
 	width:100%;
 	display:block;
 	text-align:left;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	color: #000;
 }
@@ -949,7 +963,7 @@ h6 { font-size: 16px; }
 	visibility: visible;
 	bottom: 30px;
 }
-.grax_tm_portfolio .details span{font-family: "Poppins";}
+.grax_tm_portfolio .details span{font-family: "Montserrat", sans-serif;}
 .grax_tm_portfolio .details h3{
 	font-size: 18px;
 	font-weight: 600;
@@ -1098,13 +1112,13 @@ h6 { font-size: 16px; }
     100% { opacity:1; }
 }
 .grax_tm_talk .text p{
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 }
 
 .grax_tm_talk .button a{
 	color: #fff;
 	text-decoration: none;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	position: relative;
 	display: inline-block;
@@ -1225,7 +1239,7 @@ h6 { font-size: 16px; }
 .grax_tm_news .news_list ul li .details .title a:hover{color: #e54b4b;}
 .grax_tm_news .news_list ul li .details .date{
 	text-transform: uppercase;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-size: 12px;
 	color: #767676;
 	font-style: italic;
@@ -1374,7 +1388,7 @@ body.modal{
 }
 .grax_tm_modalbox_news .date{
 	text-transform: uppercase;
-    font-family: "Poppins";
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     color: #767676;
     font-style: italic;
@@ -1414,7 +1428,7 @@ body.modal{
 	align-items: center;
 }
 .grax_tm_modalbox_news .share span{
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	color: #000;
 	font-weight: 600;
 	display: inline-block;
@@ -1507,7 +1521,7 @@ body.modal{
 	color: inherit !important;
 }
 .grax_tm_contact .info_list ul li span{
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	color: #000;
 }
@@ -1657,7 +1671,7 @@ body.modal{
 .grax_tm_copyright .copy p{
 	text-transform: uppercase;
 	color: #fff;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -1850,7 +1864,7 @@ body.modal{
 	position: absolute;
 	top: -77%;
     left: 0px;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-size: 13px;
     transform: rotateZ(90deg);
 	text-transform: uppercase;
@@ -1934,7 +1948,7 @@ body.modal{
 }
 .grax_tm_settings .title{
 	color: #fff;
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
 	position: relative;
 	display: inline-block;
@@ -2102,7 +2116,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	color: #000;
 	font-size: 13px;
 	font-weight: 600;
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	display: block;
 	position: relative;
 	top: 2px;
@@ -2167,7 +2181,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	color: #fff;
 	font-size: 20px;
 	letter-spacing: 2px;
-	font-family: "Poppins";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 }
 .grax_tm_intro_hero .grax_tm_down{
@@ -2239,7 +2253,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 .grax_tm_intro_fixed_price .pricing-info,
 .grax_tm_intro_fixed_price .anim {text-decoration: none;
 	color: #fff;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     background-color: #e54b4b;
     position: fixed;
     font-size: 22px;

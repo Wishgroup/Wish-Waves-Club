@@ -114,7 +114,7 @@ function Hero({ showPreloader }) {
           Your browser does not support the video tag.
         </video>
         {/* Fallback background if video doesn't load */}
-        <div className="video-fallback" style={{ background: '#041D26', display: 'none' }}></div>
+        <div className="video-fallback" style={{ background: '#123f49', display: 'none' }}></div>
         <div className="overlay"></div>
       </div>
       <div className="content">

@@ -98,7 +98,7 @@ Message: ${formData.message}
 <p><strong>Phone:</strong> ${formData.phone || 'Not provided'}</p>
 <p><strong>Company:</strong> ${formData.company || 'Not provided'}</p>
 <p><strong>Message:</strong></p>
-<p>${formData.message.replace(/\n/g, '<br>')}</p>
+<p>${(formData.message || '').replace(/\n/g, '<br>')}</p>
             `.trim()
           })
         })

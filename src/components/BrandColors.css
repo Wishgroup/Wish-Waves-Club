@@ -11,7 +11,7 @@
 
 /* Apply brand colors throughout */
 .simple-portfolio {
-  background: var(--wish-cream);
+  background: #123f49;
 }
 
 /* Glass Morphism Base Styles */
@@ -128,8 +128,17 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .simple-hero {
+    min-height: 100vh;
+  }
+
   .simple-hero .details {
     padding: 0 20px;
+  }
+
+  .scroll-to-form-button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -157,7 +166,7 @@
 
 /* About Section - Glass Effect */
 .simple-about {
-  background: linear-gradient(180deg, var(--wish-cream) 0%, var(--wish-white) 100%);
+  background: transparent;
   padding: 100px 0;
 }
 
@@ -173,7 +182,7 @@
 
 .simple-about .grax_tm_title_holder h2 {
   color: var(--wish-dark-blue);
-  font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .simple-about .grax_tm_title_holder span {
@@ -251,6 +260,14 @@
   color: var(--wish-vibrant-teal);
 }
 
+/* Hide topbar on mobile view */
+@media (max-width: 1040px) {
+  .grax_tm_topbar,
+  .grax_tm_topbar .topbar_inner {
+    display: none !important;
+  }
+}
+
 /* Contact Form with Brand Colors */
 .contact-form-section {
   background: linear-gradient(135deg, var(--wish-pale-blue) 0%, var(--wish-vibrant-teal) 100%);
@@ -263,7 +280,7 @@
 
 .contact-form-header h2 {
   color: var(--wish-dark-blue);
-  font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contact-form-header p {

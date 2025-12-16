@@ -216,6 +216,7 @@ function Footer() {
     <div ref={sectionRef} className="grax_tm_section">
       {/* App Promotion Section */}
       <section 
+        className="app-promotion-section"
         style={{ 
           backgroundColor: '#0A6873', 
           padding: '40px 0',
@@ -227,7 +228,7 @@ function Footer() {
             {/* Left: Logo - Light logo for dark background */}
             <div className="col-md-3 col-lg-3">
               <img 
-                src="/img/logo-light.png" 
+                src="/wishwaveslogo.png" 
                 alt="Wish Waves Logo" 
                 style={{ 
                   maxHeight: '150px', 
@@ -273,19 +274,12 @@ function Footer() {
         </div>
       </section>
 
-      <footer className="mil-dark-bg" style={{ backgroundColor: '#041D26' }}>
+      <footer className="mil-dark-bg">
         <div className="mi-invert-fix">
           <div className="container mil-p-120-60" style={{ padding: '80px 40px' }}>
-            {/* Top Section: Logo and Newsletter */}
+            {/* Top Section: Newsletter */}
             <div className="row mil-mb-90 mil-newsletter-row justify-content-center">
               <div className="col-lg-6 col-md-8 col-12 mil-mb-60 text-center">
-                <div className="mil-muted mil-logo mil-up mil-mb-30" style={{ 
-                  textAlign: 'center',
-                  fontSize: '32px',
-                  fontFamily: "'Playfair Display', serif",
-                  color: '#ffffff',
-                  fontWeight: '600'
-                }}>Wish Waves</div>
                 <p className="mil-light-soft mil-up mil-mb-30" style={{ 
                   textAlign: 'center',
                   color: '#ffffff',
